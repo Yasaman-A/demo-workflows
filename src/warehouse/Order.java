@@ -1,18 +1,33 @@
 package warehouse;
 
+/**
+ * Defines functionalities for putting an order for an item.
+ */
 public class Order {
 
-	private static int defaulQuantity = 10;
-	
-	public void putOrder(int quantity) {
-		System.out.println("Order is created for " + quantity);
-	}
-	
-	public static void main(String[] args) {
-		Order order = new Order();
-		
-		order.putOrder(defaulQuantity);
+  /**
+   * default quantity to be used for orders.
+   */
+  private static final int DEFAULT_QUANTITY = 10;
 
-	}
+  /**
+   * puts an order with a given quanity for all items.
+   *
+   * @param quantity defines the ordered quantity.
+   */
+  public void putOrder(final int quantity) {
+    System.out.println("Order is created for " + quantity);
+  }
+
+  /**
+   * starting point of the program.
+   *
+   * @param args inputs entered by the system at the start point.
+   */
+  public static void main(final String[] args) {
+    Order order = new Order();
+    order.putOrder(DEFAULT_QUANTITY);
+
+  }
 
 }
