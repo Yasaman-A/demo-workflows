@@ -3,6 +3,10 @@
 
 .project
 .vscode
+.classpath
+.settings
+build
+.DS_Store
 
 # Log file
 *.log
