@@ -16,7 +16,7 @@ public class Order {
    * @param quantity defines the ordered quantity.
    */
   public void putOrder(final int quantity) {
-    System.out.println("Order is created for " + quantity);
+    System.out.println("Order is created for all items for " + quantity);
   }
 
   /**
